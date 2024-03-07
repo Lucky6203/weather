@@ -1,0 +1,97 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+  }
+  body {
+    background-image: url("https://cdn.pixabay.com/photo/2018/08/23/07/35/thunderstorm-3625405_1280.jpg");
+    background-size: cover;
+  }
+
+  #main {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    /* grid-template-rows: 200px; */
+    grid-gap: 10px;
+    grid-template-areas:
+      "d d d d d d d d d d d d"
+      "a a a a b b b b b b b b"
+      "c c c c c c c c c c c c";
+    padding: 10px;
+  }
+
+  #climate {
+    grid-area: a;
+    /* background-color: yellow; */
+    padding: 0px 40px;
+  }
+  #map {
+    grid-area: b;
+    /* display: none; */
+    /* background-color: green; */
+  }
+  /* #wheaterData img{
+    
+    
+  } */
+  #dailyWheater {
+    grid-area: c;
+    /* background-color: rgb(177, 239, 243); */
+    border-radius: 30px;
+  }
+  #searchBar {
+    grid-area: d;
+    /* background-color: rgb(177, 239, 243); */
+    text-align: center;
+  }
+  #dailyWheater {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    /* grid-template-rows: 200px; */
+    grid-gap: 10px;
+    width: 60%;
+    margin: auto;
+    padding: 10px;
+  }
+  #dailyWheater div {
+    background-color: rgba(196, 221, 214, 0.432);
+    text-align: center;
+    border-radius: 30px;
+    padding: 10px;
+  }
+  #search {
+    width: 350px;
+    height: 30px;
+    border-radius: 20px;
+    border: 1px solid gainsboro;
+    padding: 10px;
+  }
+  #searchbtn {
+    height: 30px;
+    border-radius: 20px;
+    padding: 5px 40px;
+    border: 0px;
+    margin-left: 40px;
+  }
+  #searchbtn:hover {
+    background-color: rgb(247, 214, 166);
+    cursor: pointer;
+  }
+  #wheaterData{
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+
+  }
+   #wheaterData p{
+    background-color: rgba(231, 216, 200, 0.397);
+    border-radius: 10px;
+    margin: 3px 0px;
+    padding: 5px 5px;
+  }
+  #gmap_canvas{
+    display: none;
+  }
+  li{
+  
+   margin-left: 30px;
+}

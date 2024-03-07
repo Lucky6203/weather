@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdUijW8Pl6X57WSf5jgv0q00gtqFw0w0saJw&usqp=CAU">
+    <title>weather</title>
+    <link rel="stylesheet" href="index.css">
+  </head>
+  <body>
+    <div id="main">
+      <div id="searchBar">
+        <h1>Welcome the weather page</h1>
+        <form action="">
+          <input type="text" id="search" placeholder="Please Enter City Name" />
+          <input
+            type="button"
+            onclick="getData()"
+            value="Search"
+            id="searchbtn"
+          />
+        </form>
+      </div>
+      <div id="climate">
+        <div id="wheaterData"></div>
+      </div>
+      <div id="map">
+        <div class="gmap_canvas">
+          <iframe
+            width="100%"
+            height="400"
+            id="gmap_canvas"
+            src="https://maps.google.com/maps?&t=&z=13&ie=UTF8&iwloc=&output=embed"
+            frameborder="0"
+            scrolling="no"
+            marginheight="0"
+            marginwidth="0"
+          ></iframe
+          ><a href="https://123movies-a.com"></a><br />
+        </div>
+      </div>
+      <div id="dailyWheater"></div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
